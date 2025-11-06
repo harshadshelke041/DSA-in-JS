@@ -1,0 +1,57 @@
+// Reverse an Array — do it in place using two pointers
+
+let nums = [1,2,3,4,5];
+
+let left = 0;
+let right = nums.length-1;
+
+while(left<right) {
+
+  let temp= nums[left];
+  nums[left] = nums[right];
+  nums[right] = temp
+
+  left++;
+  right--;  
+}
+
+console.log(nums);
+
+//Find the Largest Element — return the max element in an array.
+
+let nums = [2,4,5,0,1,6]
+let max = nums[0]
+
+for(let i=0;i<nums.length;i++) {
+if(num[i] > max) max = num[i];
+}
+
+console.log(nums)
+
+// Find the Second Largest Element — without sorting.
+
+  let num = [2,3,5, 4];          
+let max = -Infinity
+let secondMax = -Infinity
+
+for(let i=0;i<num.length;i++) {
+
+  if( num[i] > max ) 
+  {
+    secondMax = max;
+    max = num[i]
+  } else if(num[i]  > secondMax && num[i] < max ) {
+    secondMax = num[i]
+  }
+
+  
+
+}
+
+console.log(max);
+console.log(secondMax);
+
+
+
+
+
